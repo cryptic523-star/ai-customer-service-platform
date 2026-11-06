@@ -7,6 +7,9 @@
     "dev": "netlify dev",
     "typecheck": "tsc --noEmit",
     "test:health": "tsx tests/health.check.ts",
-    "test:db": "tsx --env-file=.env tests/db.check.ts"
+    "test:db": "tsx --env-file=.env tests/db.check.ts",
+    "seed": "tsx --env-file=.env scripts/seed.ts",
+    "test:seed": "tsx --env-file=.env tests/seed.check.ts",
+    "test:all": "npm run typecheck && npm run test:health && npm run test:db && npm run test:seed"
   }
 }
