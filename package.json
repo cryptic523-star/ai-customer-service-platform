@@ -6,18 +6,7 @@
   "scripts": {
     "dev": "netlify dev",
     "typecheck": "tsc --noEmit",
-    "test:health": "tsx tests/health.check.ts"
-  },
-  "dependencies": {
-    "@supabase/supabase-js": "^2.119.0",
-    "openai": "^7.53.0",
-    "zod": "^4.6.7"
-  },
-  "devDependencies": {
-    "@netlify/functions": "^6.1.1",
-    "@types/node": "^26.6.6",
-    "netlify-cli": "^27.16.2",
-    "tsx": "^4.23.15",
-    "typescript": "^5.9.3"
+    "test:health": "tsx tests/health.check.ts",
+    "test:db": "tsx --env-file=.env tests/db.check.ts"
   }
 }
