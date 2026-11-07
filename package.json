@@ -10,6 +10,8 @@
     "test:db": "tsx --env-file=.env tests/db.check.ts",
     "seed": "tsx --env-file=.env scripts/seed.ts",
     "test:seed": "tsx --env-file=.env tests/seed.check.ts",
-    "test:all": "npm run typecheck && npm run test:health && npm run test:db && npm run test:seed"
+    "test:all": "npm run typecheck && npm run test:health && npm run test:db && npm run test:seed",
+    "create-key": "tsx --env-file=.env scripts/create-business-key.ts",
+    "test:chat": "tsx --env-file=.env tests/chat.check.ts"
   }
 }
